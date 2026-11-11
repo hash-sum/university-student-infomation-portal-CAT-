@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- QUESTION ONE: HTML5 DOCUMENT STRUCTURE (b) Page Title -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>University Student Information Portal</title>
+  
+  <!-- QUESTION FOUR: CSS3 STYLING AND LAYOUT - External Stylesheet Link -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Google Fonts for Modern Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ==========================================
+       QUESTION ONE (c): HEADER SECTION
+       ========================================== -->
+  <header class="site-header">
+    <div class="header-container">
+      <div class="logo-area">
+        <span class="portal-badge">PORTAL</span>
+        <div>
+          <h1 class="university-name">MASINDE MULIRO UNIVERSITY OF SCIENCE AND TECHNOLOGY</h1>
+          <h2 class="portal-heading">University Student Information Portal</h2>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==========================================
+         QUESTION ONE (d): NAVIGATION MENU
+         Links: Home, About, Student Registration, Contact Us
+         ========================================== -->
+    <nav class="main-nav">
+      <ul class="nav-list">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#students" class="nav-link">Student Records</a></li>
+        <li><a href="#registration" class="nav-link">Student Registration</a></li>
+        <li><a href="#grade-calculator" class="nav-link">Grade Calculator</a></li>
+        <li><a href="#contact" class="nav-link">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ==========================================
+       MAIN CONTENT CONTAINER (CSS Grid/Flexbox Layout)
+       ========================================== -->
+  <main class="page-container">
+
+    <!-- HOME / HERO SECTION -->
+    <section id="home" class="hero-card">
+      <div class="hero-content">
+        <span class="tag">Academic Year 2026/2027</span>
+        <h2>Welcome to the Official Student Portal</h2>
+        <p>Access your academic records, explore undergraduate degree programmes, register for courses, and compute academic grades in one unified dashboard.</p>
+        <div class="hero-actions">
+          <a href="#registration" class="btn btn-primary">Register New Student</a>
+          <a href="#students" class="btn btn-secondary">View Enrolled Students</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         QUESTION TWO (a): ABOUT SECTION
+         QUESTION TWO (b): UNORDERED LIST OF 4 PROGRAMMES
+         ========================================== -->
+    <section id="about" class="content-section">
+      <div class="section-header">
+        <h2>About the Student Information Portal</h2>
+      </div>
+
+      <!-- Question 2 (a): Heading and paragraph describing purpose -->
+      <div class="about-card">
+        <h3>Portal Purpose &amp; Overview</h3>
+        <p>
+          The University Student Information Portal is a centralized digital management system designed to streamline academic administration, track student enrolment, and facilitate transparent communication between students, faculty, and administrators. The portal enables prospective and continuing students to register their details, verify their admitted academic programmes, monitor years of study, and maintain accurate institutional records seamlessly.
+        </p>
+      </div>
+
+      <!-- Question 2 (b): Unordered list containing FOUR academic programmes -->
+      <div class="programmes-card">
+        <h3>Academic Programmes Offered</h3>
+        <p class="subtitle">Explore four of our accredited undergraduate degree programmes:</p>
+        <ul class="programme-list">
+          <li>
+            <span class="icon">&#128187;</span>
+            <div>
+              <strong>Bachelor of Science in Computer Science</strong>
+              <p>Focuses on software engineering, algorithm analysis, artificial intelligence, and systems architecture.</p>
+            </div>
+          </li>
+          <li>
+            <span class="icon">&#127760;</span>
+            <div>
+              <strong>Bachelor of Science in Information Technology</strong>
+              <p>Specializes in enterprise networking, web engineering, cloud computing, and database management.</p>
+            </div>
+          </li>
+          <li>
+            <span class="icon">&#128274;</span>
+            <div>
+              <strong>Bachelor of Science in Cybersecurity</strong>
+              <p>Equips students with skills in ethical hacking, cryptographic systems, risk audit, and digital forensics.</p>
+            </div>
+          </li>
+          <li>
+            <span class="icon">&#128202;</span>
+            <div>
+              <strong>Bachelor of Science in Data Science</strong>
+              <p>Blends statistical machine learning, big data infrastructure, quantitative research, and predictive analytics.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         QUESTION TWO (c): STUDENT INFORMATION TABLE
+         Columns: Student ID, Student Name, Registration Number, Programme, Year of Study
+         At least THREE sample student records
+         ========================================== -->
+    <section id="students" class="content-section">
+      <div class="section-header">
+        <span class="section-tag">Question 2 (c)</span>
+        <h2>Enrolled Student Information</h2>
+        <p class="section-desc">Current active student directory with complete academic profile details.</p>
+      </div>
+
+      <div class="table-responsive">
+        <table class="student-table" id="studentTable">
+          <thead>
+            <tr>
+              <th>Student ID</th>
+              <th>Student Name</th>
+              <th>Registration Number</th>
+              <th>Programme</th>
+              <th>Year of Study</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>STU-101</td>
+              <td>Samuel Bundi</td>
+              <td>COM/B/01-07632/2025</td>
+              <td>BSc Computer Science</td>
+              <td>Year 2</td>
+            </tr>
+            <tr>
+              <td>STU-102</td>
+              <td>Benjamin Mocha</td>
+              <td>COM/B/01-00189/2025</td>
+              <td>BSc Computer Science</td>
+              <td>Year 2</td>
+            </tr>
+            <tr>
+              <td>STU-103</td>
+              <td>Clifford Ontita</td>
+              <td>COM/B/01-00197/2025</td>
+              <td>BSc Computer Science</td>
+              <td>Year 2</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         QUESTION THREE: HTML FORMS AND INPUT ELEMENTS
+         QUESTION SIX: DOM MANIPULATION & EVENT HANDLING
+         QUESTION SEVEN: JAVASCRIPT FORM VALIDATION & TESTING
+         ========================================== -->
+    <section id="registration" class="content-section">
+      <div class="section-header">
+        <span class="section-tag">Questions 3, 6 &amp; 7</span>
+        <h2>Student Registration Form</h2>
+        <p class="section-desc">Complete the fields below to enrol a student into the institutional database.</p>
+      </div>
+
+      <div class="form-grid-wrapper">
+        <!-- Form Column -->
+        <div class="form-container">
+          <!-- Live Validation Feedback Banner -->
+          <div id="statusMessage" class="status-banner" style="display: none;"></div>
+
+          <form id="studentRegistrationForm" novalidate>
+            <!-- (a) Full Name -->
+            <div class="form-group">
+              <label for="fullName">Full Name <span class="required">*</span></label>
+              <input 
+                type="text" 
+                id="fullName" 
+                name="fullName" 
+                placeholder="e.g. Samuel Bundi"
+                autocomplete="name">
+              <small class="error-text" id="fullNameError"></small>
+            </div>
+
+            <!-- (b) Registration Number -->
+            <div class="form-group">
+              <label for="regNumber">Registration Number <span class="required">*</span></label>
+              <input 
+                type="text" 
+                id="regNumber" 
+                name="regNumber" 
+                placeholder="e.g. COM/B/01-07632/2025">
+              <small class="error-text" id="regNumberError"></small>
+            </div>
+
+            <!-- (c) Email Address (HTML5 input type) -->
+            <div class="form-group">
+              <label for="email">Email Address <span class="required">*</span></label>
+              <input 
+                type="email" 
+                id="email" 
+                name="email" 
+                placeholder="e.g. sbundi@mmust.ac.ke"
+                autocomplete="email">
+              <small class="error-text" id="emailError"></small>
+            </div>
+
+            <!-- (d) Gender (Radio Buttons) -->
+            <div class="form-group">
+              <label class="group-label">Gender <span class="required">*</span></label>
+              <div class="radio-group">
+                <label class="radio-label">
+                  <input type="radio" name="gender" value="Male" checked>
+                  <span>Male</span>
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="gender" value="Female">
+                  <span>Female</span>
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="gender" value="Other">
+                  <span>Other</span>
+                </label>
+              </div>
+            </div>
+
+            <!-- (e) Academic Programme (Dropdown Select with >= 4 programmes) -->
+            <div class="form-group">
+              <label for="programme">Academic Programme <span class="required">*</span></label>
+              <select id="programme" name="programme">
+                <option value="" disabled selected>-- Select Academic Programme --</option>
+                <option value="BSc Computer Science">Bachelor of Science in Computer Science</option>
+                <option value="BSc Information Technology">Bachelor of Science in Information Technology</option>
+                <option value="BSc Cybersecurity">Bachelor of Science in Cybersecurity</option>
+                <option value="BSc Data Science">Bachelor of Science in Data Science</option>
+              </select>
+              <small class="error-text" id="programmeError"></small>
+            </div>
+
+            <!-- (f) Action Buttons (Submit & Reset) + Quick Test Helper -->
+            <div class="button-group">
+              <button type="submit" class="btn btn-primary" id="submitBtn">Submit Registration</button>
+              <button type="reset" class="btn btn-outline" id="resetBtn">Reset</button>
+              <button type="button" class="btn btn-demo" id="fillDemoBtn" title="Auto-fill sample data for rapid testing">Test Sample Data</button>
+            </div>
+          </form>
+        </div>
+
+        <!-- Live DOM Display Output Column (Question 6 c & d) -->
+        <div class="submission-display-card">
+          <h3>Registered Student Preview</h3>
+          <p class="subtitle">Dynamically rendered via JavaScript DOM manipulation upon submission:</p>
+
+          <div id="emptyDisplayPlaceholder" class="empty-placeholder">
+            <span class="placeholder-icon">&#128221;</span>
+            <p>No student submitted yet.</p>
+            <small>Fill out the registration form on the left and click <strong>Submit Registration</strong> to inspect the DOM output.</small>
+          </div>
+
+          <div id="submittedDetailsCard" class="submitted-details-box" style="display: none;">
+            <div class="badge-success-pill">&#10003; Successfully Registered</div>
+            <div class="detail-row">
+              <span class="detail-label">Full Name:</span>
+              <span class="detail-value" id="displayName">--</span>
+            </div>
+            <div class="detail-row">
+              <span class="detail-label">Registration Number:</span>
+              <span class="detail-value" id="displayReg">--</span>
+            </div>
+            <div class="detail-row">
+              <span class="detail-label">Email Address:</span>
+              <span class="detail-value" id="displayEmail">--</span>
+            </div>
+            <div class="detail-row">
+              <span class="detail-label">Gender:</span>
+              <span class="detail-value" id="displayGender">--</span>
+            </div>
+            <div class="detail-row">
+              <span class="detail-label">Academic Programme:</span>
+              <span class="detail-value" id="displayProgramme">--</span>
+            </div>
+            <div class="detail-row">
+              <span class="detail-label">Timestamp:</span>
+              <span class="detail-value" id="displayTimestamp">--</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         QUESTION FIVE: JAVASCRIPT PROGRAMMING (Grading Interactive Test)
+         ========================================== -->
+    <section id="grade-calculator" class="content-section">
+      <div class="section-header">
+        <span class="section-tag">Question 5 (b &amp; c)</span>
+        <h2>Interactive Examination Grade Calculator</h2>
+        <p class="section-desc">Powered by the <code>calculateGrade()</code> function defined in <code>script.js</code>.</p>
+      </div>
+
+      <div class="grading-grid">
+        <!-- Scale card -->
+        <div class="grading-scale-card">
+          <h3>Institutional Grading Scale</h3>
+          <table class="grading-table">
+            <thead>
+              <tr>
+                <th>Score Range</th>
+                <th>Grade</th>
+                <th>Remarks</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="grade-a">
+                <td>70 – 100</td>
+                <td><span class="grade-badge a">A</span></td>
+                <td>Distinction / Excellent</td>
+              </tr>
+              <tr class="grade-b">
+                <td>60 – 69</td>
+                <td><span class="grade-badge b">B</span></td>
+                <td>Credit / Very Good</td>
+              </tr>
+              <tr class="grade-c">
+                <td>50 – 59</td>
+                <td><span class="grade-badge c">C</span></td>
+                <td>Pass / Good</td>
+              </tr>
+              <tr class="grade-d">
+                <td>40 – 49</td>
+                <td><span class="grade-badge d">D</span></td>
+                <td>Satisfactory Pass</td>
+              </tr>
+              <tr class="grade-e">
+                <td>Below 40</td>
+                <td><span class="grade-badge e">E</span></td>
+                <td>Fail</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Interactive Calculator Widget -->
+        <div class="calc-widget-card">
+          <h3>Test Score Calculation</h3>
+          <p>Enter any examination mark (0–100) or test the mandatory question score (75):</p>
+          <div class="calc-input-row">
+            <input type="number" id="scoreInput" min="0" max="100" value="75" placeholder="Score (0-100)">
+            <button type="button" class="btn btn-primary" id="calcGradeBtn">Compute Grade</button>
+            <button type="button" class="btn btn-outline" id="triggerExamAlertBtn">Run <code>alert(calculateGrade(75))</code></button>
+          </div>
+          <div class="grade-result-display" id="gradeResultDisplay">
+            <span class="result-label">Result:</span>
+            <span class="result-value" id="resultGradeText">Score 75 = Grade A</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         QUESTION ONE (d): CONTACT US SECTION
+         ========================================== -->
+    <section id="contact" class="content-section">
+      <div class="section-header">
+        <span class="section-tag">Question 1 (d)</span>
+        <h2>Contact Us</h2>
+        <p class="section-desc">Reach out to the University Admissions and IT Directorate for support.</p>
+      </div>
+      
+      <div class="contact-cards-grid">
+        <div class="contact-card">
+          <span class="contact-icon">&#128205;</span>
+          <h4>Physical Address</h4>
+          <p>Main Campus, Kakamega-Webuye Road<br>P.O. Box 190-50100, Kakamega, Kenya</p>
+        </div>
+        <div class="contact-card">
+          <span class="contact-icon">&#128222;</span>
+          <h4>Telephone Inquiries</h4>
+          <p>+254 56 31375 / +254 702 597 360<br>Mon - Fri: 8:00 AM - 5:00 PM</p>
+        </div>
+        <div class="contact-card">
+          <span class="contact-icon">&#9993;</span>
+          <h4>Email Support</h4>
+          <p>info@mmust.ac.ke<br>admissions@mmust.ac.ke</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <p>&copy; 2026 Masinde Muliro University of Science and Technology. All Rights Reserved.</p>
+      <p class="footer-subtext">BCS 213: Web Design and Development Examination Project</p>
+    </div>
+  </footer>
+
+  <!-- ==========================================
+       QUESTION FIVE & SIX & SEVEN: JAVASCRIPT LINK
+       ========================================== -->
+  <script src="script.js"></script>
+</body>
+</html>
